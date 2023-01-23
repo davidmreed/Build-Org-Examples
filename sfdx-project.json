@@ -1,0 +1,59 @@
+{
+    "packageDirectories": [
+        {
+            "path": "content-notes",
+            "package": "Content-Notes",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT",
+            "default": true
+        },
+        {
+            "path": "record-types",
+            "package": "Record-Types",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT",
+            "default": false
+        },
+        {
+            "path": "dependency-package-base",
+            "package": "Dependency-Package-Base",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT",
+            "default": false
+        },
+        {
+            "path": "dependency-package-record-types",
+            "package": "Dependency-Package-Record-Types",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT",
+            "default": false,
+            "dependencies": [
+                {
+                    "package": "Dependency-Package-Base",
+                    "versionNumber": "0.1.0.LATEST"
+                }
+            ]
+        },
+        {
+            "path": "standard-value-sets",
+            "package": "Standard-Value-Sets",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT",
+            "default": false
+        }
+    ],
+    "name": "Build-Org-Examples",
+    "namespace": "",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "55.0",
+    "packageAliases": {
+        "Content-Notes": "0Ho1R000000blQASAY",
+        "Record-Types": "0Ho5f000000PBNKCA4",
+        "Content-Notes@0.1.0-1": "04t1R000000kZKlQAM",
+        "Record-Types@0.1.0-1": "04t5f000000Jn2AAAS",
+        "Dependency-Package-Base": "0Ho5f000000PBNPCA4",
+        "Dependency-Package-Record-Types": "0Ho5f000000PBNUCA4",
+        "Dependency-Package-Base@0.1.0-1": "04t5f000000Jn2FAAS",
+        "Standard-Value-Sets": "0Ho5f000000PBNZCA4"
+    }
+}
