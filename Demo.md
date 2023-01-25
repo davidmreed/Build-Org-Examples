@@ -62,7 +62,7 @@ sfdx force:org:snapshot:create -n DependencyTest --sourceorg snapshot-org
 ERROR running force:package:version:create:  An error occurred while trying to install a package dependency, ID 04t4p000001zyjg: package.xml: Cannot add component of type:CustomObject named:Sample__c subjectId:01I8H000000m392 to another package because it is an installed component.
 ```
 
-Whoa. Maybe it's because the object isn't namespaced?
+Whoa. Maybe it's because the object isn't namespaced? Or that same 2GP bug as with Workflow Rules?
 
 # Standard Value Sets
 
@@ -73,6 +73,16 @@ sfdx force:package:version:create -d standard-value-sets -x -f config/basic-org.
 ERROR running force:package:version:create:  Case.Customer Support Case: Picklist value: Evaluating not found
 ```
 
-# Feature Dependency: Communities
+# Feature Dependency: Action Plans
+sfdx force:package:create -n Action-Plans -t Unlocked -r action-plans
+sfdx force:package:version:create -d action-plans -x -w 100
+ERROR running force:package:version:create:  Contact-Contact Layout: Invalid field:Name in related list:ActionPlan
+
+sfdx force:package:version:create -d action-plans -x -w 100 -f config/with-action-plans.json
+
+Successfully created the package version [08c4p00000008cIAAQ]. Subscriber Package Version Id: 04t4p000001zyp0AAA
+Package Installation URL: https://login.salesforce.com/packaging/installPackage.apexp?p0=04t4p000001zyp0AAA
+As an alternative, you can use the "sfdx force:package:install" command.
+
 
 # Feature Dependency Requiring Org Shape
