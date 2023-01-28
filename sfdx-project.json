@@ -47,6 +47,19 @@
             "versionName": "ver 0.1",
             "versionNumber": "0.1.0.NEXT",
             "default": false
+        },
+        {
+            "path": "loyalty-management",
+            "package": "Loyalty-Management",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT",
+            "default": false,
+            "unpackagedMetadata": {
+                "path": "loyalty-management-unpackaged"
+            },
+            "apexTestAccess": {
+                "permissionSetLicenses": ["Loyalty Management - Growth"]
+            }
         }
     ],
     "name": "Build-Org-Examples",
