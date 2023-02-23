@@ -5,7 +5,7 @@
             "package": "Content-Notes",
             "versionName": "ver 0.1",
             "versionNumber": "0.1.0.NEXT",
-            "default": true
+            "default": false
         },
         {
             "path": "record-types",
@@ -39,6 +39,13 @@
             "package": "Standard-Value-Sets",
             "versionName": "ver 0.1",
             "versionNumber": "0.1.0.NEXT",
+            "default": true
+        },
+        {
+            "path": "standard-value-sets-unpackaged",
+            "package": "Standard-Value-Sets-Unpackaged",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT",
             "default": false
         },
         {
@@ -56,9 +63,6 @@
             "default": false,
             "unpackagedMetadata": {
                 "path": "loyalty-management-unpackaged"
-            },
-            "apexTestAccess": {
-                "permissionSetLicenses": ["Loyalty Management - Growth"]
             }
         }
     ],
@@ -66,5 +70,9 @@
     "namespace": "",
     "sfdcLoginUrl": "https://login.salesforce.com",
     "sourceApiVersion": "55.0",
-    "packageAliases": {}
+    "packageAliases": {
+        "Loyalty-Management": "0Ho4p00000004fICAQ",
+        "Loyalty-Management@0.1.0-1": "04t4p000001zzC4AAI",
+        "Loyalty-Management@0.1.0-2": "04t4p000001zzC9AAI"
+    }
 }
